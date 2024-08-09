@@ -6,4 +6,4 @@ RUN sudo apt update && \
     sudo apt upgrade -y && \
     sudo apt install make -y && \
     make
-ENTRYPOINT ["/home/cudaq/test/first"]
+ENTRYPOINT ["/home/cudaq/test/bell"]

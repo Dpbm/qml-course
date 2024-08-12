@@ -4,6 +4,7 @@
 #include <iostream>
 #include <cmath>
 
+#include "./x.h"
 #include "./h.h"
 
 using std::cout;
@@ -11,7 +12,6 @@ using std::endl;
 
 int main(void)
 {
-
   cudaSetDevice(0);
 
   int n_devices;
@@ -26,14 +26,11 @@ int main(void)
   {
     cout << "Total CUDA Devices: " << n_devices << endl;
   }
-
+	
   custatevecHandle_t handle;
   custatevecCreate(&handle);
 
-  const int n_qubits = 1;
-  const int n_targets = 1;
-  const int n_controls = 0;
-  const int adjoint = 0;
+  const int n_qubits = 2;
   const int state_size = std::pow(2, n_qubits);
 
   cuDoubleComplex *state = new cuDoubleComplex[state_size];
@@ -41,46 +38,50 @@ int main(void)
   cuDoubleComplex *statevector;
   cudaMalloc((void **)&statevector, state_size * sizeof(cuDoubleComplex));
 
-  cuDoubleComplex *hadamard;
-  cudaMalloc((void **)&hadamard, 4 * sizeof(cuDoubleComplex));
-
   cudaMemcpy(
       statevector,
       state,
       state_size * sizeof(cuDoubleComplex),
       cudaMemcpyHostToDevice);
 
-  cudaMemcpy(
-      hadamard,
-      H,
-      4 * sizeof(cuDoubleComplex),
-      cudaMemcpyHostToDevice);
-
-  cout << "H Matrix" << endl;
-  for (int i = 0; i < 4; i++)
-  {
-    cuDoubleComplex c = H[i];
-    cout << (double)c.x << endl;
-  }
 
   custatevecInitializeStateVector(handle, statevector, CUDA_C_64F, n_qubits, CUSTATEVEC_STATE_VECTOR_TYPE_ZERO);
-
-  int targets[] = {0};
-
+  
+  int hadamard_target[] = {0};
   custatevecApplyMatrix(
       handle,
       statevector,
       CUDA_C_64F,
-      n_qubits,
-      hadamard,
+      1,//n_qubits
+      H, //hadamard gate
       CUDA_C_64F,
       CUSTATEVEC_MATRIX_LAYOUT_COL,
-      adjoint,
-      targets,
-      n_targets,
+      0, //no adjoint
+      hadamard_target, //target
+      1, //n_targets
       nullptr, // controls
       nullptr, // control bit-string
       0,       // n controls
+      CUSTATEVEC_COMPUTE_64F,
+      nullptr,
+      0);
+
+  int cnot_target[] = {1};
+  int cnot_control[] = {0};
+  custatevecApplyMatrix(
+      handle,
+      statevector,
+      CUDA_C_64F,
+      n_qubits,//n_qubits
+      X, //cnot(x controlled) gate
+      CUDA_C_64F,
+      CUSTATEVEC_MATRIX_LAYOUT_COL,
+      0, //no adjoint
+      cnot_target, //target
+      1, //n_targets
+      cnot_control, // controls
+      nullptr, // control bit-string
+      1,       // n controls
       CUSTATEVEC_COMPUTE_64F,
       nullptr,
       0);
@@ -99,7 +100,6 @@ int main(void)
 
   custatevecDestroy(handle);
   cudaFree(statevector);
-  cudaFree(hadamard);
   delete state;
 
   return 0;

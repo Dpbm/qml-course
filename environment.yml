@@ -1,15 +1,8 @@
 name: qml-course
 channels:
   - conda-forge
-  - nvidia
 dependencies:
   - python=3.10
-  - mpi4py 
-  - openmpi 
-  - cxx-compiler
-  - cuquantum
-  - cuquantum-python
-  - cuda
   - pip
   - pip:
     - jupyterlab

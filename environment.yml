@@ -2,12 +2,14 @@ name: qml-course
 channels:
   - conda-forge
 dependencies:
+  - pennylane-lightning-gpu
   - python=3.10
   - pip
   - pip:
     - jupyterlab
-    - numpy
+    - numpy==1.23.5
     - matplotlib
     - pylatexenc
+    - pandas
 platforms:
   - linux-64

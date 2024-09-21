@@ -11,5 +11,6 @@ dependencies:
     - matplotlib
     - pylatexenc
     - pandas
+    - networkx
 platforms:
   - linux-64

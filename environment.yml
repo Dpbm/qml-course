@@ -12,5 +12,7 @@ dependencies:
     - pylatexenc
     - pandas
     - networkx
+    - kaggle
+    - scikit-learn
 platforms:
   - linux-64

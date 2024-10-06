@@ -14,5 +14,6 @@ dependencies:
     - networkx
     - kaggle
     - scikit-learn
+    - seaborn
 platforms:
   - linux-64

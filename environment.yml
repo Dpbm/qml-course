@@ -15,5 +15,9 @@ dependencies:
     - kaggle
     - scikit-learn
     - seaborn
+    - qiskit-ibm-runtime
+    - qiskit-aer
+    - qiskit==1.2.4
+    - qiskit-machine-learning
 platforms:
   - linux-64

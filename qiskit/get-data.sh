@@ -1,6 +1,6 @@
 #!/bin/bash
 
 # check: https://www.kaggle.com/docs/api
-kaggle datasets download -d marius2303/ad-click-prediction-dataset/
+kaggle datasets download -d tongpython/cat-and-dog
 
-unzip ./ad-click-prediction-dataset.zip
+unzip ./cat-and-dog.zip

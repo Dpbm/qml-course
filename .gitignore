@@ -219,3 +219,4 @@ pyrightconfig.json
 .vscode
 *.zip
 ad_click_dataset*
+*.npy

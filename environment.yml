@@ -1,11 +1,14 @@
 name: qml-course
 channels:
   - conda-forge
+  - pytorch
 dependencies:
-  - pennylane-lightning-gpu
+  - pytorch
+  - cpuonly
   - python=3.10
   - pip
   - pip:
+    - pennylane
     - jupyterlab
     - numpy==1.23.5
     - matplotlib
@@ -15,9 +18,11 @@ dependencies:
     - kaggle
     - scikit-learn
     - seaborn
-    - qiskit-ibm-runtime
+    - Pillow
     - qiskit-aer
     - qiskit==1.2.4
     - qiskit-machine-learning
+    - JLDracula
+    - tqdm
 platforms:
   - linux-64

@@ -1,10 +1,7 @@
 name: qml-course
 channels:
   - conda-forge
-  - pytorch
 dependencies:
-  - pytorch
-  - cpuonly
   - python=3.10
   - pip
   - pip:
@@ -15,14 +12,16 @@ dependencies:
     - pylatexenc
     - pandas
     - networkx
-    - kaggle
-    - scikit-learn
     - seaborn
-    - Pillow
     - qiskit-aer
     - qiskit==1.2.4
     - qiskit-machine-learning
     - JLDracula
-    - tqdm
+    - Jinja2
+    - tensorflow
+    - markupsafe
+    - pyyaml
+    - tensorflow-datasets
+    - Pillow
 platforms:
   - linux-64

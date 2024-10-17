@@ -220,3 +220,4 @@ pyrightconfig.json
 *.zip
 ad_click_dataset*
 *.npy
+*.keras

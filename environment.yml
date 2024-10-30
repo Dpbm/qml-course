@@ -23,5 +23,6 @@ dependencies:
     - pyyaml
     - tensorflow-datasets
     - Pillow
+    - scikit-learn
 platforms:
   - linux-64

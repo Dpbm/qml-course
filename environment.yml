@@ -1,28 +1,29 @@
 name: qml-course
 channels:
-  - conda-forge
+    - conda-forge
 dependencies:
-  - python=3.10
-  - pip
-  - pip:
-    - pennylane
-    - jupyterlab
-    - numpy==1.23.5
-    - matplotlib
-    - pylatexenc
-    - pandas
-    - networkx
-    - seaborn
-    - qiskit-aer
-    - qiskit==1.2.4
-    - qiskit-machine-learning
-    - JLDracula
-    - Jinja2
-    - tensorflow
-    - markupsafe
-    - pyyaml
-    - tensorflow-datasets
-    - Pillow
-    - scikit-learn
+    - sympy
+    - python=3.10
+    - pip
+    - pip:
+          - pennylane
+          - jupyterlab
+          - numpy==1.23.5
+          - matplotlib
+          - pylatexenc
+          - pandas
+          - networkx
+          - seaborn
+          - qiskit-aer
+          - qiskit==1.2.4
+          - JLDracula
+          - Jinja2
+          - tensorflow
+          - markupsafe
+          - pyyaml
+          - tensorflow-datasets
+          - Pillow
+          - scikit-learn
+
 platforms:
-  - linux-64
+    - linux-64

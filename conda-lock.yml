@@ -13,7 +13,7 @@
 version: 1
 metadata:
   content_hash:
-    linux-64: 9650a0cbafda397ec61f62f0dee6490560fd160e4faeed2c13cff735c9c18c65
+    linux-64: 352eb3f3ed753662aa9322939cde40d69919688bf626489529f94488171a2b21
   channels:
   - url: conda-forge
     used_env_vars: []
@@ -276,15 +276,15 @@ package:
   category: main
   optional: false
 - name: setuptools
-  version: 75.1.0
+  version: 75.3.0
   manager: conda
   platform: linux-64
   dependencies:
     python: '>=3.8'
-  url: https://conda.anaconda.org/conda-forge/noarch/setuptools-75.1.0-pyhd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/setuptools-75.3.0-pyhd8ed1ab_0.conda
   hash:
-    md5: d5cd48392c67fb6849ba459c2c2b671f
-    sha256: 6725235722095c547edd24275053c615158d6163f396550840aebd6e209e4738
+    md5: 2ce9825396daf72baabaade36cee16da
+    sha256: a36d020b9f32fc3f1a6488a1c4a9c13988c6468faf6895bf30ca69521a61230e
   category: main
   optional: false
 - name: tk
@@ -689,17 +689,6 @@ package:
   url: https://files.pythonhosted.org/packages/b5/fd/afcd0496feca3276f509df3dbd5dae726fcc756f1a08d9e25abe1733f962/executing-2.1.0-py2.py3-none-any.whl
   hash:
     sha256: 8d63781349375b5ebccc3142f4b30350c0cd9c79f921cde38be2be4637e98eaf
-  category: main
-  optional: false
-- name: fastdtw
-  version: 0.3.4
-  manager: pip
-  platform: linux-64
-  dependencies:
-    numpy: '*'
-  url: https://files.pythonhosted.org/packages/99/43/30f2d8db076f216b15c10db663b46e22d1750b1ebacd7af6e62b83d6ab98/fastdtw-0.3.4.tar.gz
-  hash:
-    sha256: 2350fa6ec36bcad186eaf81f46eff35181baf04e324f522de8aeb43d0243f64f
   category: main
   optional: false
 - name: fastjsonschema
@@ -1754,37 +1743,6 @@ package:
   url: https://files.pythonhosted.org/packages/46/21/07222b2690dff882fe42870fabf9068f105b863a73382a6d29b9f9c46322/qiskit_aer-0.15.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
   hash:
     sha256: f07b6f937bde64cb88d037e8805cdd3b6e2985231ac7dd18f27a7af4aa653a2c
-  category: main
-  optional: false
-- name: qiskit-algorithms
-  version: 0.3.0
-  manager: pip
-  platform: linux-64
-  dependencies:
-    qiskit: '>=0.44'
-    scipy: '>=1.4'
-    numpy: '>=1.17'
-  url: https://files.pythonhosted.org/packages/e0/2f/9a71fc36ff8de0188d4325399e1ad29c8fce2c2b427dae6c900003510943/qiskit_algorithms-0.3.0-py3-none-any.whl
-  hash:
-    sha256: 8ae1aa8aafc32864890a31c06d19f100a79df6412350f1f4b8c124cd17b3f731
-  category: main
-  optional: false
-- name: qiskit-machine-learning
-  version: 0.7.2
-  manager: pip
-  platform: linux-64
-  dependencies:
-    qiskit: '>=0.44'
-    qiskit-algorithms: '>=0.2.0'
-    scipy: '>=1.4'
-    numpy: '>=1.17'
-    psutil: '>=5'
-    scikit-learn: '>=1.2.0'
-    fastdtw: '*'
-    dill: '>=0.3.4'
-  url: https://files.pythonhosted.org/packages/7f/4a/ed252b41533f0fef82d0085339040277cdfba5c5ec7e816eefd92cf97b26/qiskit_machine_learning-0.7.2-py3-none-any.whl
-  hash:
-    sha256: e63c525e6fa5fd22e9005e3e09115c38c700823a6d693565d8811de206eed437
   category: main
   optional: false
 - name: referencing

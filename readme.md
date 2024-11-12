@@ -1,6 +1,6 @@
 # QML Course
 
-Neste repositório, estão contidos todos os arquivos referentes ao minicurso ministrado por [Alexandre](https://github.com/Dpbm) e Hugo durante a Semana de tecnologia de 2024 na [UNIVEM - Centro Universitário Eurípides de Marília](https://www.univem.edu.br/).
+Neste repositório, estão contidos todos os arquivos referentes ao minicurso ministrado por [Alexandre](https://github.com/Dpbm) durante a Semana de tecnologia de 2024 na [UNIVEM - Centro Universitário Eurípides de Marília](https://www.univem.edu.br/).
 
 O minicurso possui 4 aulas dividas em 2 dias durante a semana (12 e 13 de novembro).
 

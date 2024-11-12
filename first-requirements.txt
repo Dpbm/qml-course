@@ -1,0 +1,9 @@
+jupyterlab
+numpy
+matplotlib
+pylatexenc
+qiskit-aer
+qiskit==1.2.4
+Jinja2
+markupsafe
+pyyaml

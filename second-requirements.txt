@@ -10,7 +10,7 @@ qiskit==1.2.4
 Jinja2
 tensorflow
 markupsafe
-pyyaml
+pyyaml  
 tensorflow-datasets
 Pillow
 scikit-learn

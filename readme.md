@@ -15,7 +15,14 @@ Para utilizar os códigos aqui presentes, será necessário:
 Com essas ferramentas instaladas execute no terminal:
 
 ```bash
-pip install -r requirements.txt 
+
+# para dependências do primeiro dia 
+pip install -r first-requirements.txt 
+# para dependências do segundo dia
+pip install -r second-requirements.txt
+
+
+#-----------------------------------------------
 
 # ou para conda/mamba
 conda env create -f ./environment.yml

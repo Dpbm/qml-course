@@ -90,11 +90,13 @@ Caso contrário faça o seguinte:
 
 ## Fotos no evento
 
-<img src="./photos/1.jpeg" alt="foto 1" style="width:300px;height:auto;">
-<img src="./photos/2.jpeg" alt="foto 2" style="width:300px;height:auto;">
-<img src="./photos/3.jpeg" alt="foto 3" style="width:300px;height:auto;">
-<img src="./photos/4.jpeg" alt="foto 4" style="width:300px;height:auto;">
-<img src="./photos/5.jpeg" alt="foto 5" style="width:300px;height:auto;">
-<img src="./photos/6.jpeg" alt="foto 6" style="width:300px;height:auto;">
+<p float="left">
+    <img src="./photos/1.jpeg" alt="foto 1" style="width:300px;height:auto;">
+    <img src="./photos/2.jpeg" alt="foto 2" style="width:300px;height:auto;">
+    <img src="./photos/3.jpeg" alt="foto 3" style="width:300px;height:auto;">
+    <img src="./photos/4.jpeg" alt="foto 4" style="width:300px;height:auto;">
+    <img src="./photos/5.jpeg" alt="foto 5" style="width:300px;height:auto;">
+    <img src="./photos/6.jpeg" alt="foto 6" style="width:300px;height:auto;">
+</p>
 
 Todas as fotos foram tiradas pelo nosso querido amigo [Hugo](https://www.linkedin.com/in/hugo-hm-b3482b144/).
